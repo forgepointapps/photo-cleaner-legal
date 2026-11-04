@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Get Photo Cleaner</title>
+<!--
+  The app's share link (the QR and the shared text point here). An Android device goes to Google
+  Play, an iPhone/iPad to the App Store; anything else (a computer, an unknown device) sees both
+  buttons. No tracking, no cookies, no third-party scripts; without JavaScript the two buttons are
+  plain links. Source of truth: legal/site/get.html in the app repo; the store links mirror
+  lib/core/store/store_links.dart.
+-->
+<style>
+  :root {
+    --ink: #1a1c20;
+    --ink-faint: #8a8f99;
+    --line: #e4e6ea;
+    --paper: #fbfbfa;
+    --card: #ffffff;
+    --accent: #2c6e63;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  .card { max-width: 420px; width: 100%; text-align: center; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 18px; }
+  h1 { font-family: Georgia, "Iowan Old Style", serif; font-size: 32px; font-weight: 400; margin-bottom: 8px; }
+  .sub { color: var(--ink-faint); font-size: 15px; margin-bottom: 28px; }
+  a.store {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background: var(--ink);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  a.store small { display: block; font-size: 12px; font-weight: 400; opacity: 0.75; margin-bottom: 2px; }
+  a.store:hover, a.store:focus { background: var(--accent); }
+  .status { color: var(--ink-faint); font-size: 14px; min-height: 20px; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="get-icon.png" alt="Photo Cleaner icon" width="96" height="96">
+    <h1>Photo Cleaner</h1>
+    <p class="sub">Clean up your photo gallery.</p>
+
+    <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.stapp.photocleaner">
+      <small>Get it on</small>Google Play
+    </a>
+    <a class="store" id="appstore" href="https://apps.apple.com/app/id6830862419">
+      <small>Download on the</small>App Store
+    </a>
+    <p class="status" id="status"></p>
+  </div>
+<script>
+  (function () {
+    var ua = navigator.userAgent || '';
+    // iPadOS 13+ Safari reports a Mac; a Mac with a touch screen is an iPad.
+    var ios = /iPhone|iPad|iPod/i.test(ua) ||
+      (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+    var android = !ios && /Android/i.test(ua);
+    var target = android ? document.getElementById('play')
+      : ios ? document.getElementById('appstore') : null;
+    if (!target) return;
+    document.getElementById('status').textContent =
+      'Opening ' + (android ? 'Google Play' : 'the App Store') + '…';
+    window.location.replace(target.href);
+  })();
+</script>
+</body>
+</html>
