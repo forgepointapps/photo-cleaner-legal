@@ -16,7 +16,6 @@
   .wrap { max-width: var(--max); margin: 0 auto; padding: 72px 0 96px; }
   .lang { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 13px; letter-spacing: 0.02em; margin-bottom: 56px; color: var(--ink-faint); }
   .lang a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
-  .lang a:hover { border-bottom-color: var(--accent); }
   .lang .current { color: var(--ink); font-weight: 600; }
   .eyebrow { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-transform: uppercase; letter-spacing: 0.18em; font-size: 11px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
   h1 { font-size: 38px; line-height: 1.12; letter-spacing: -0.01em; font-weight: 400; margin-bottom: 18px; }
@@ -49,92 +48,113 @@
 
   <div class="eyebrow">Photo Cleaner</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 28 June 2026</p>
+  <p class="updated">Last updated: 4 November 2026</p>
 
   <p class="lede">
-    Photo Cleaner is built local-first. Your photos and videos are scanned and sorted
-    entirely on your device. Their contents, file names and locations never leave your
-    phone and are never uploaded anywhere. The only information that can ever leave your
-    device is anonymous, aggregated usage data, and only if you explicitly turn it on.
+    Photo Cleaner for Android and iOS is built local-first. Your photos and videos are scanned
+    and sorted entirely on your device. Their contents, file names and locations never leave
+    your phone and are never uploaded to us. The app sends us telemetry data and crash reports
+    only if you say yes to each of them, and both are off until you do.
   </p>
 
   <h2>The short version</h2>
   <ul>
     <li>All photo and video analysis happens <strong>on your device</strong>. We never see, upload or store your images.</li>
     <li>We do <strong>not</strong> collect your name, email, phone number, contacts, precise location or any photo content.</li>
-    <li>Anonymous usage statistics and crash reports are <strong>off by default</strong>. They are only collected if you opt in, and you can turn them off again at any time in Settings.</li>
-    <li>The app may show advertising. Any ads are <strong>non-personalized (contextual)</strong>, which means they are not based on a profile of you.</li>
+    <li>The app asks you two separate questions, <strong>"Crash reports"</strong> and <strong>"Telemetry data"</strong>. Both are <strong>off until you say yes</strong>, and you can change either one at any time in Settings.</li>
   </ul>
 
   <h2>Everything stays on your device</h2>
   <p>
-    To do its job, Photo Cleaner needs permission to read your photo and video library.
-    Once you grant it, the app looks at your images, videos and their basic details such as
-    size, date and dimensions, and sorts them into categories for you.
+    To do its job, Photo Cleaner needs permission to read your photo and video library. You can
+    give it all your photos or only the ones you choose. The app then looks at your images,
+    videos and their basic details such as size, date and dimensions, and sorts them into
+    categories for you.
   </p>
   <p>
-    All of this, including the optional smart sorting step that helps group similar photos,
-    runs locally on your phone. None of it is sent to us or to anyone else. Your settings,
-    scan results and progress are kept only in the app's own storage on your device, and are
+    All of this, including the smart sorting step that helps group similar photos, runs locally on your phone. None of it is sent to
+    us or to anyone else. Your settings, scan results, the measurements the app takes from each
+    photo and your progress are kept only in the app's own storage on your device, and are
     removed if you uninstall the app.
   </p>
 
-  <h2>Anonymous usage data and crash reports <span class="pill">opt-in</span></h2>
+  <h2>Crash reports <span class="pill">only with your yes</span></h2>
   <p>
-    If, and only if, you turn on <strong>"Share anonymous usage data"</strong> (during the
-    initial setup or later in Settings), the app sends anonymous, aggregated statistics and
-    crash reports through <strong>Google Firebase</strong>. This is
-    <strong>off by default</strong>. If you never turn it on, nothing is sent.
+    If the app crashes or something doesn't work, and you allow it, it sends us a short
+    technical note about what went wrong, so we can fix it. Your photos are never part of it.
+  </p>
+  <p>
+    A crash report contains technical error details (which part of the app failed and why),
+    basic device information (device model, operating-system version, available memory and
+    storage, app version) and a random identifier tied to your app installation. Before a report
+    is sent, the app removes file paths from it. It never contains your photos, videos or
+    anything you type. Reports are sent through <strong>Google Firebase Crashlytics</strong>.
+  </p>
+  <p>
+    If you say no, nothing is sent. The app keeps the technical notes of the last 30 days on
+    your phone and, after a problem, may ask you whether to send them. Older notes are deleted.
   </p>
 
-  <h3>What is collected when you enable it</h3>
+  <h2>Telemetry data <span class="pill">only with your yes</span></h2>
+  <p>
+    If you allow it, the app sends us a few anonymous numbers about how it's doing: how many
+    photos were scanned, how big the gallery is, which parts of the app people use most, and
+    where something got stuck, if it did. It helps us see what works and what needs fixing.
+    It's never linked to your photos or to you. You can turn it off anytime in Settings.
+  </p>
+  <h3>What is sent when you allow it</h3>
   <ul>
-    <li><strong>Aggregate usage events</strong>, for example that a scan started or finished, how many items were sorted into each category, group sizes, how long a scan took, the app language, and whether setup was completed. These are plain numbers and fixed labels.</li>
-    <li><strong>Crash reports</strong>, meaning technical error details and basic device information (device model, operating-system version, available memory and storage, app version) recorded when the app crashes, so we can fix problems.</li>
-    <li><strong>Basic device information</strong> such as device brand, model and Android version, so we can understand which devices the app runs on and fix device-specific problems.</li>
+    <li><strong>Usage events</strong>, for example that a scan started or finished, how many items were sorted into each category, how long a scan took, the app language, and whether setup was completed. These are plain numbers and fixed labels.</li>
+    <li><strong>Basic device information</strong> such as device brand, model and operating-system version, so we can understand which devices the app runs on and fix device-specific problems.</li>
     <li><strong>Approximate location</strong> at country, region or city level, worked out by Google from your internet address. We do <strong>not</strong> collect GPS location.</li>
-    <li><strong>An anonymous identifier</strong> that is random, tied only to your app installation, and reset if you reinstall. It is <strong>not</strong> your advertising ID and not a hardware identifier.</li>
+    <li><strong>An anonymous identifier</strong> that is random, tied only to your app installation, and reset if you reinstall. If you have also allowed crash reports, a crash report carries this same identifier, so we can see a problem together with the telemetry data of the same installation.</li>
   </ul>
+  <p>Telemetry data is sent through <strong>Google Analytics for Firebase</strong>.</p>
 
   <h3>What is never collected</h3>
   <p>
     No photo or video content, no file names, no name, email, phone number, contacts,
     messages, precise (GPS) location, and nothing you type. We do not link this data to your
-    identity and we do not use your advertising ID for statistics.
+    identity.
+  </p>
+
+  <h2>Messages from us <span class="pill">always on</span></h2>
+  <p>
+    The app checks <strong>Google Firebase Remote Config</strong> for a short message we may
+    publish (for example about an update). To answer, Google receives a random identifier tied
+    to your app installation and basic technical details (app version, operating system, device
+    language, country setting and time zone). No content from your phone is sent. This check
+    does not depend on your two answers above.
   </p>
 
   <div class="note">
-    Google acts as our service provider for these statistics and crash reports, and may
-    process the data on servers in the United States. Our analytics are set up with extra
-    privacy options on: no advertising signals and no ad personalization. Approximate
-    location is recorded at city level or coarser, never GPS. Usage events are kept for up
-    to 14 months.
+    Google acts as our service provider for crash reports, telemetry data and messages, and
+    may process the data on servers in the United States. Our analytics are set up with extra
+    privacy options on: no advertising signals and no ad personalization. Approximate location
+    is recorded at city level or coarser, never GPS. Usage events are kept for up to 14 months.
   </div>
 
-  <h2>Advertising <span class="pill">contextual only</span></h2>
+  <h2>On iPhone</h2>
+  <p>Where the iPhone app works differently from the Android app:</p>
+  <ul>
+    <li><strong>Photos stored in iCloud.</strong> If you use iCloud Photos with "Optimize iPhone Storage", some originals are not on your phone. To measure those photos, the app asks Apple's Photos app to download the original to your phone, only on Wi-Fi and only while enough free space is left. The download comes from your own iCloud through Apple; nothing is sent to us, and nothing in your library is changed.</li>
+    <li><strong>No tracking.</strong> The app does not track you.</li>
+  </ul>
+
+  <h2>If you write to us</h2>
   <p>
-    Photo Cleaner may show advertising in the free version of the app. Any advertising is
-    <strong>contextual and non-personalized</strong>. Ads may be chosen based on general
-    context such as your country or the content of the app, but <strong>not</strong> on a
-    personal profile, your browsing history, or tracking across other apps.
-  </p>
-  <p>
-    To show ads, the advertising provider (Google AdMob) may handle limited technical
-    information such as approximate (country-level) location, device type, and identifiers
-    needed to deliver ads, prevent fraud and limit how often the same ad appears. Where the
-    rules require it in the EU and EEA, the app shows a consent dialog before any ads are
-    served, and your choice is respected. Upgrading to the paid version removes ads.
-  </p>
-  <p>
-    For details on how the advertising provider handles data, see
-    <a href="https://policies.google.com/technologies/partner-sites">Google's policy for partner sites</a>.
+    If you send us feedback from the app, it opens your own email app with a message to us.
+    Besides what you write and any ratings you give, the message contains the app version, the operating-system
+    version, the device model and the app language, and you see all of it before you send.
+    We use your email only to answer you.
   </p>
 
   <h2>Legal bases (GDPR)</h2>
   <ul>
     <li><strong>Processing your media on the device</strong> is necessary to provide the service you asked for (Art. 6(1)(b) GDPR), and happens only after you grant the permission.</li>
-    <li><strong>Anonymous statistics and crash reports</strong> rely on your consent (Art. 6(1)(a) GDPR), given through the in-app toggle and withdrawable at any time.</li>
-    <li><strong>Contextual advertising</strong> relies on our legitimate interest in funding a free app (Art. 6(1)(f) GDPR) and on your consent where required, given through the ad consent dialog.</li>
+    <li><strong>Crash reports and telemetry data</strong> rely on your consent (Art. 6(1)(a) GDPR, § 25(1) TDDDG), given separately for each through the app's two questions and withdrawable at any time in Settings. A one-time "Send" after a problem is a consent for that one sending.</li>
+    <li><strong>Messages from us</strong> rely on our legitimate interest in telling users about updates and problems (Art. 6(1)(f) GDPR). They contain no content from your phone.</li>
+    <li><strong>Feedback emails</strong> are answered on the basis of your request (Art. 6(1)(b) GDPR) and our legitimate interest in answering it (Art. 6(1)(f) GDPR).</li>
   </ul>
 
   <h2>Your rights</h2>
@@ -142,9 +162,9 @@
   <ul>
     <li>access the personal data we hold about you;</li>
     <li>request correction or erasure of your data;</li>
-    <li>restrict or object to processing;</li>
+    <li>restrict or object to processing, including processing based on our legitimate interest (Art. 21 GDPR);</li>
     <li>data portability;</li>
-    <li>withdraw consent at any time. For statistics, just switch off the toggle in Settings. This does not affect processing already carried out;</li>
+    <li>withdraw consent at any time. For crash reports and telemetry data, just switch them off in Settings. This does not affect processing already carried out;</li>
     <li>lodge a complaint with a supervisory authority. The authority for our location is the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia (<a href="https://www.ldi.nrw.de">LDI NRW</a>).</li>
   </ul>
   <p>To exercise any of these rights, contact us using the details below.</p>
@@ -158,14 +178,14 @@
   <h2>Changes to this policy</h2>
   <p>
     We may update this policy as the app evolves. The current version is always available at
-    this address, with the "last updated" date at the top. Significant changes affecting
-    data collection will be reflected in the app.
+    this address, with the "last updated" date at the top. Significant changes affecting data
+    collection will be reflected in the app.
   </p>
 
   <h2>Who is responsible</h2>
   <p>
-    The person responsible for data processing in connection with the Photo Cleaner Android
-    app is:
+    The person responsible for data processing in connection with the Photo Cleaner app for
+    Android and iOS is:
   </p>
   <div class="identity">
     <strong>Stefan Taifas</strong> (trading as ForgePoint)<br>

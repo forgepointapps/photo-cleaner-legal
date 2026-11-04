@@ -16,7 +16,6 @@
   .wrap { max-width: var(--max); margin: 0 auto; padding: 72px 0 96px; }
   .lang { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 13px; letter-spacing: 0.02em; margin-bottom: 56px; color: var(--ink-faint); }
   .lang a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
-  .lang a:hover { border-bottom-color: var(--accent); }
   .lang .current { color: var(--ink); font-weight: 600; }
   .eyebrow { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-transform: uppercase; letter-spacing: 0.18em; font-size: 11px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
   h1 { font-size: 38px; line-height: 1.12; letter-spacing: -0.01em; font-weight: 400; margin-bottom: 18px; }
@@ -49,100 +48,122 @@
 
   <div class="eyebrow">Photo Cleaner</div>
   <h1>Datenschutzerklärung</h1>
-  <p class="updated">Stand: 28. Juni 2026</p>
+  <p class="updated">Stand: 4. November 2026</p>
 
   <p class="lede">
-    Photo Cleaner ist „local-first" konzipiert. Ihre Fotos und Videos werden vollständig
-    auf Ihrem Gerät analysiert und sortiert. Deren Inhalte, Dateinamen und Speicherorte
-    verlassen Ihr Telefon nie und werden nirgendwohin hochgeladen. Die einzigen Daten, die
-    Ihr Gerät überhaupt verlassen können, sind anonyme, aggregierte Nutzungsdaten, und nur
-    dann, wenn Sie dies ausdrücklich aktivieren.
+    Photo Cleaner für Android und iOS ist „local-first" konzipiert. Ihre Fotos und Videos
+    werden vollständig auf Ihrem Gerät analysiert und sortiert. Deren Inhalte, Dateinamen und
+    Speicherorte verlassen Ihr Telefon nie und werden nie zu uns hochgeladen. Telemetriedaten
+    und Absturzberichte sendet die App nur, wenn Sie jeweils zustimmen, und beides ist
+    ausgeschaltet, bis Sie das tun.
   </p>
 
   <h2>Kurzfassung</h2>
   <ul>
     <li>Die gesamte Foto- und Videoanalyse erfolgt <strong>auf Ihrem Gerät</strong>. Wir sehen, speichern oder übertragen Ihre Bilder zu keinem Zeitpunkt.</li>
     <li>Wir erheben <strong>keinen</strong> Namen, keine E-Mail-Adresse, keine Telefonnummer, keine Kontakte, keinen genauen Standort und keine Bildinhalte.</li>
-    <li>Anonyme Nutzungsstatistiken und Absturzberichte sind <strong>standardmäßig deaktiviert</strong>. Sie werden nur nach Ihrer Einwilligung erhoben und lassen sich jederzeit in den Einstellungen wieder ausschalten.</li>
-    <li>Die App kann Werbung anzeigen. Werbung ist <strong>nicht personalisiert (kontextbezogen)</strong>, sie basiert also nicht auf einem Profil über Sie.</li>
+    <li>Die App stellt Ihnen zwei getrennte Fragen, <strong>„Absturzberichte"</strong> und <strong>„Telemetriedaten"</strong>. Beides ist <strong>ausgeschaltet, bis Sie zustimmen</strong>, und Sie können jede Antwort jederzeit in den Einstellungen ändern.</li>
   </ul>
 
   <h2>Alles bleibt auf Ihrem Gerät</h2>
   <p>
     Zur Erfüllung ihrer Funktion benötigt Photo Cleaner die Berechtigung, Ihre Foto- und
-    Videobibliothek zu lesen. Sobald Sie diese erteilen, betrachtet die App Ihre Bilder,
-    Videos und deren grundlegende Angaben wie Größe, Datum und Abmessungen und sortiert sie
-    für Sie in Kategorien.
+    Videobibliothek zu lesen. Sie können der App alle Fotos freigeben oder nur die, die Sie
+    auswählen. Die App betrachtet dann Ihre Bilder, Videos und deren grundlegende Angaben wie
+    Größe, Datum und Abmessungen und sortiert sie für Sie in Kategorien.
   </p>
   <p>
-    All dies, einschließlich des optionalen intelligenten Sortierschritts, der ähnliche
-    Fotos gruppiert, läuft lokal auf Ihrem Telefon. Nichts davon wird an uns oder an Dritte
-    übermittelt. Ihre Einstellungen, Scan-Ergebnisse und Fortschritte werden ausschließlich
-    im eigenen Speicher der App auf Ihrem Gerät abgelegt und beim Deinstallieren der App
-    entfernt.
+    All dies, einschließlich des intelligenten Sortierschritts, der ähnliche Fotos gruppiert,
+    läuft lokal auf Ihrem Telefon.
+    Nichts davon wird an uns oder an Dritte übermittelt. Ihre Einstellungen, Scan-Ergebnisse,
+    die Messwerte, die die App aus jedem Foto gewinnt, und Ihr Fortschritt werden
+    ausschließlich im eigenen Speicher der App auf Ihrem Gerät abgelegt und beim Deinstallieren
+    der App entfernt.
   </p>
 
-  <h2>Anonyme Nutzungsdaten und Absturzberichte <span class="pill">Einwilligung</span></h2>
+  <h2>Absturzberichte <span class="pill">nur mit Ihrer Zustimmung</span></h2>
   <p>
-    Nur wenn Sie <strong>„Anonyme Nutzungsdaten teilen"</strong> aktivieren (während der
-    Ersteinrichtung oder später in den Einstellungen), sendet die App anonyme, aggregierte
-    Statistiken und Absturzberichte über <strong>Google Firebase</strong>. Diese Funktion
-    ist <strong>standardmäßig deaktiviert</strong>. Solange Sie sie nicht aktivieren, wird
-    nichts gesendet.
+    Wenn die App abstürzt oder etwas nicht funktioniert und Sie es erlauben, sendet sie uns
+    eine kurze technische Notiz darüber, was schiefgelaufen ist, damit wir es beheben können.
+    Ihre Fotos sind nie Teil davon.
+  </p>
+  <p>
+    Ein Absturzbericht enthält technische Fehlerdetails (welcher Teil der App fehlschlug und
+    warum), grundlegende Geräteinformationen (Gerätemodell, Betriebssystemversion, verfügbarer
+    Arbeits- und Gerätespeicher, App-Version) sowie eine zufällige, an Ihre App-Installation
+    gebundene Kennung. Bevor ein Bericht gesendet wird, entfernt die App Dateipfade daraus. Er
+    enthält niemals Ihre Fotos, Videos oder Ihre Eingaben. Die Berichte werden über
+    <strong>Google Firebase Crashlytics</strong> gesendet.
+  </p>
+  <p>
+    Wenn Sie nicht zustimmen, wird nichts gesendet. Die App bewahrt die technischen Notizen der
+    letzten 30 Tage auf Ihrem Telefon auf und kann Sie nach einem Problem fragen, ob sie
+    gesendet werden sollen. Ältere Notizen werden gelöscht.
   </p>
 
-  <h3>Was bei Aktivierung erhoben wird</h3>
+  <h2>Telemetriedaten <span class="pill">nur mit Ihrer Zustimmung</span></h2>
+  <p>
+    Wenn Sie es erlauben, sendet uns die App ein paar anonyme Zahlen darüber, wie sie läuft:
+    wie viele Fotos gescannt wurden, wie groß die Galerie ist, welche Teile der App am meisten
+    genutzt werden und wo etwas hängen geblieben ist, falls das passiert ist. So sehen wir, was
+    funktioniert und was verbessert werden muss. Die Daten werden nie mit Ihren Fotos oder mit
+    Ihnen verknüpft. Sie können das jederzeit in den Einstellungen ausschalten.
+  </p>
+  <h3>Was mit Ihrer Zustimmung gesendet wird</h3>
   <ul>
-    <li><strong>Aggregierte Nutzungsereignisse</strong>, zum Beispiel dass ein Scan gestartet oder abgeschlossen wurde, wie viele Elemente in welche Kategorie sortiert wurden, Gruppengrößen, wie lange ein Scan gedauert hat, die App-Sprache und ob die Einrichtung abgeschlossen wurde. Dabei handelt es sich um einfache Zahlen und feste Bezeichnungen.</li>
-    <li><strong>Absturzberichte</strong>, also technische Fehlerdetails und grundlegende Geräteinformationen (Gerätemodell, Betriebssystemversion, verfügbarer Speicher, App-Version), die im Falle eines Absturzes aufgezeichnet werden, damit wir Probleme beheben können.</li>
-    <li><strong>Grundlegende Geräteinformationen</strong> wie Gerätemarke, Gerätemodell und Android-Version, damit wir verstehen, auf welchen Geräten die App läuft, und gerätespezifische Probleme beheben können.</li>
+    <li><strong>Nutzungsereignisse</strong>, zum Beispiel dass ein Scan gestartet oder abgeschlossen wurde, wie viele Elemente in welche Kategorie sortiert wurden, wie lange ein Scan gedauert hat, die App-Sprache und ob die Einrichtung abgeschlossen wurde. Dabei handelt es sich um einfache Zahlen und feste Bezeichnungen.</li>
+    <li><strong>Grundlegende Geräteinformationen</strong> wie Gerätemarke, Gerätemodell und Betriebssystemversion, damit wir verstehen, auf welchen Geräten die App läuft, und gerätespezifische Probleme beheben können.</li>
     <li><strong>Ungefährer Standort</strong> auf Länder-, Regions- oder Stadtebene, von Google aus Ihrer Internetadresse ermittelt. Wir erheben <strong>keinen</strong> GPS-Standort.</li>
-    <li><strong>Eine anonyme Kennung</strong>, die zufällig vergeben wird, nur mit Ihrer App-Installation verknüpft ist und bei einer Neuinstallation zurückgesetzt wird. Sie ist <strong>nicht</strong> Ihre Werbe-ID und keine Hardware-Kennung.</li>
+    <li><strong>Eine anonyme Kennung</strong>, die zufällig vergeben wird, nur mit Ihrer App-Installation verknüpft ist und bei einer Neuinstallation zurückgesetzt wird. Wenn Sie auch Absturzberichte erlaubt haben, trägt ein Absturzbericht dieselbe Kennung, damit wir ein Problem zusammen mit den Telemetriedaten derselben Installation sehen können.</li>
   </ul>
+  <p>Telemetriedaten werden über <strong>Google Analytics for Firebase</strong> gesendet.</p>
 
   <h3>Was nie erhoben wird</h3>
   <p>
     Keine Foto- oder Videoinhalte, keine Dateinamen, kein Name, keine E-Mail-Adresse, keine
     Telefonnummer, keine Kontakte, keine Nachrichten, kein genauer (GPS-)Standort und nichts,
-    was Sie eingeben. Wir verknüpfen diese Daten nicht mit Ihrer Identität und verwenden Ihre
-    Werbe-ID nicht für Statistiken.
+    was Sie eingeben. Wir verknüpfen diese Daten nicht mit Ihrer Identität.
+  </p>
+
+  <h2>Mitteilungen von uns <span class="pill">immer aktiv</span></h2>
+  <p>
+    Die App fragt bei <strong>Google Firebase Remote Config</strong> ab, ob wir eine kurze
+    Mitteilung veröffentlicht haben (zum Beispiel zu einem Update). Dafür erhält Google eine
+    zufällige, an Ihre App-Installation gebundene Kennung und grundlegende technische Angaben
+    (App-Version, Betriebssystem, Gerätesprache, Ländereinstellung und Zeitzone). Es werden
+    keine Inhalte von Ihrem Telefon übertragen. Diese Abfrage hängt nicht von Ihren beiden
+    Antworten oben ab.
   </p>
 
   <div class="note">
-    Google handelt für diese Statistiken und Absturzberichte als unser Dienstleister und
-    kann die Daten auf Servern in den USA verarbeiten. Unsere Analyse ist mit zusätzlichen
-    Datenschutzoptionen eingerichtet: keine Werbesignale und keine Anzeigenpersonalisierung.
-    Der ungefähre Standort wird auf Stadtebene oder gröber erfasst, niemals per GPS.
-    Nutzungsereignisse werden bis zu 14 Monaten gespeichert.
+    Google handelt für Absturzberichte, Telemetriedaten und Mitteilungen als unser
+    Dienstleister und kann die Daten auf Servern in den USA verarbeiten. Unsere Analyse ist mit
+    zusätzlichen Datenschutzoptionen eingerichtet: keine Werbesignale und keine
+    Anzeigenpersonalisierung. Der ungefähre Standort wird auf Stadtebene oder gröber erfasst,
+    niemals per GPS. Nutzungsereignisse werden bis zu 14 Monaten gespeichert.
   </div>
 
-  <h2>Werbung <span class="pill">nur kontextbezogen</span></h2>
+  <h2>Auf dem iPhone</h2>
+  <p>Wo die iPhone-App anders arbeitet als die Android-App:</p>
+  <ul>
+    <li><strong>Fotos in iCloud.</strong> Wenn Sie iCloud-Fotos mit „iPhone-Speicher optimieren" nutzen, liegen manche Originale nicht auf Ihrem Telefon. Um diese Fotos zu messen, bittet die App Apples Fotos-App, das Original auf Ihr Telefon zu laden, nur über WLAN und nur, solange genug freier Speicher bleibt. Der Download kommt über Apple aus Ihrer eigenen iCloud; an uns wird nichts gesendet, und in Ihrer Mediathek wird nichts verändert.</li>
+    <li><strong>Kein Tracking.</strong> Die App verfolgt Sie nicht.</li>
+  </ul>
+
+  <h2>Wenn Sie uns schreiben</h2>
   <p>
-    Photo Cleaner kann in der kostenlosen Version Werbung anzeigen. Jegliche Werbung ist
-    <strong>kontextbezogen und nicht personalisiert</strong>. Anzeigen können auf Grundlage
-    eines allgemeinen Kontexts wie Ihres Landes oder des App-Inhalts ausgewählt werden,
-    jedoch <strong>nicht</strong> auf Basis eines persönlichen Profils, eines Browserverlaufs
-    oder einer App-übergreifenden Nachverfolgung.
-  </p>
-  <p>
-    Zur Auslieferung von Werbung kann der Werbeanbieter (Google AdMob) begrenzte technische
-    Informationen verarbeiten, etwa den ungefähren (länderbezogenen) Standort, den Gerätetyp
-    und Kennungen, die zur Auslieferung der Anzeigen, zur Betrugsprävention und zur Begrenzung
-    der Anzeigenhäufigkeit erforderlich sind. Soweit in der EU und im EWR vorgeschrieben,
-    zeigt die App vor der Auslieferung von Werbung einen Einwilligungsdialog an und
-    respektiert Ihre Wahl. Mit dem Upgrade auf die kostenpflichtige Version entfällt die
-    Werbung.
-  </p>
-  <p>
-    Einzelheiten zur Datenverarbeitung durch den Werbeanbieter finden Sie in der
-    <a href="https://policies.google.com/technologies/partner-sites">Google-Richtlinie für Partner-Websites</a>.
+    Wenn Sie uns aus der App Feedback senden, öffnet sie Ihre eigene E-Mail-App mit einer
+    Nachricht an uns. Neben Ihrem Text und Ihren Bewertungen enthält die Nachricht die App-Version, die
+    Betriebssystemversion, das Gerätemodell und die App-Sprache, und Sie sehen all das, bevor
+    Sie senden. Ihre E-Mail verwenden wir nur, um Ihnen zu antworten.
   </p>
 
   <h2>Rechtsgrundlagen (DSGVO)</h2>
   <ul>
     <li><strong>Die geräteinterne Verarbeitung Ihrer Medien</strong> ist zur Erbringung der von Ihnen angeforderten Leistung erforderlich (Art. 6 Abs. 1 lit. b DSGVO) und erfolgt erst nach Erteilung der Berechtigung.</li>
-    <li><strong>Anonyme Statistiken und Absturzberichte</strong> beruhen auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die über den Schalter in der App erteilt wird und jederzeit widerrufbar ist.</li>
-    <li><strong>Kontextbezogene Werbung</strong> beruht auf unserem berechtigten Interesse an der Finanzierung einer kostenlosen App (Art. 6 Abs. 1 lit. f DSGVO) sowie, soweit erforderlich, auf Ihrer über den Einwilligungsdialog erteilten Einwilligung.</li>
+    <li><strong>Absturzberichte und Telemetriedaten</strong> beruhen auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG), die Sie für jedes getrennt über die zwei Fragen der App erteilen und jederzeit in den Einstellungen widerrufen können. Ein einmaliges „Senden" nach einem Problem ist eine Einwilligung für genau diese Übermittlung.</li>
+    <li><strong>Mitteilungen von uns</strong> beruhen auf unserem berechtigten Interesse, Nutzer über Updates und Probleme zu informieren (Art. 6 Abs. 1 lit. f DSGVO). Sie enthalten keine Inhalte von Ihrem Telefon.</li>
+    <li><strong>Feedback-E-Mails</strong> beantworten wir auf Grundlage Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO) und unseres berechtigten Interesses, sie zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).</li>
   </ul>
 
   <h2>Ihre Rechte</h2>
@@ -150,9 +171,9 @@
   <ul>
     <li>Auskunft über die zu Ihrer Person gespeicherten Daten;</li>
     <li>Berichtigung oder Löschung Ihrer Daten;</li>
-    <li>Einschränkung der Verarbeitung oder Widerspruch dagegen;</li>
+    <li>Einschränkung der Verarbeitung oder Widerspruch dagegen, auch gegen eine Verarbeitung auf Grundlage unseres berechtigten Interesses (Art. 21 DSGVO);</li>
     <li>Datenübertragbarkeit;</li>
-    <li>jederzeitigen Widerruf Ihrer Einwilligung. Für Statistiken genügt das Ausschalten des Schalters in den Einstellungen. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt;</li>
+    <li>jederzeitigen Widerruf Ihrer Einwilligung. Für Absturzberichte und Telemetriedaten genügt das Ausschalten in den Einstellungen. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt;</li>
     <li>Beschwerde bei einer Aufsichtsbehörde. Zuständig für unseren Sitz ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (<a href="https://www.ldi.nrw.de">LDI NRW</a>).</li>
   </ul>
   <p>Zur Ausübung dieser Rechte wenden Sie sich an die unten stehenden Kontaktdaten.</p>
@@ -174,8 +195,8 @@
 
   <h2>Verantwortlicher</h2>
   <p>
-    Verantwortlich für die Datenverarbeitung im Zusammenhang mit der Android-App
-    Photo Cleaner ist:
+    Verantwortlich für die Datenverarbeitung im Zusammenhang mit der App Photo Cleaner für
+    Android und iOS ist:
   </p>
   <div class="identity">
     <strong>Stefan Taifas</strong> (handelnd unter „ForgePoint")<br>
